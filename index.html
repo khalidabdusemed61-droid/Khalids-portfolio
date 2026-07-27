@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khalid Abdulsemed — Portfolio</title>
+<meta name="description" content="Khalid Abdulsemed — CS student and web developer. C++, Java, Python, HTML, CSS.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="topbar">
+  <div class="topbar__inner">
+    <a href="#home" class="brand">Khalid Abdulsemed</a>
+
+    <nav class="nav" id="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <p class="eyebrow">Software Enginering Student · Web Developer</p>
+    <h1 class="hero__heading">Hi, I'm Khalid Abdulsemed.</h1>
+    <p class="hero__lead">
+      I build clean, functional interfaces and I'm always learning something
+      new from Java's object-oriented core to hand-written HTML &amp; CSS.
+      This page collects the projects I've built along the way.
+    </p>
+    <div class="hero__cta">
+      <a href="#projects" class="btn btn--primary">View projects</a>
+      <a href="#contact" class="btn btn--ghost">Get in touch</a>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="section__head">
+      <p class="eyebrow">About</p>
+      <h2 class="section__title">A bit about me</h2>
+    </div>
+
+    <div class="about__grid">
+      <div class="about__photo">
+        <img src="images/hero-image.jpg" alt="Khalid Abdulsemed" class="img-placeholder img-placeholder--round">
+      </div>
+
+      <div class="about__text">
+        <p>
+          Hey, I'm Khalid — a Software Enginering student currently splitting my time
+          between two tracks: <strong>Java object-oriented programming</strong> and
+          <strong>front-end web development</strong>. I like understanding how things
+          work underneath, whether that's a class hierarchy in Java or the box model
+          in CSS.
+        </p>
+        <p>
+          Most of the projects below started as class exercises cloning real
+          websites to practice layout, responsiveness and clean markup. I'm also comfortable in
+          <strong>C++</strong> and <strong>Python</strong> for problem solving and
+          coursework outside the browser.
+        </p>
+        <a href="mailto:khalidabdusemed65@gmail.com" class="text-link">khalidabdusemed65@gmail.com →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section section--muted" id="skills">
+    <div class="section__head">
+      <p class="eyebrow">Skills</p>
+      <h2 class="section__title">Languages I work with</h2>
+    </div>
+
+    <ul class="skills-grid">
+      <li class="skill-card">
+        <span class="skill-badge skill-badge--cpp">C++</span>
+        <span class="skill-card__label">C++</span>
+      </li>
+      <li class="skill-card">
+        <span class="skill-badge skill-badge--java">Java</span>
+        <span class="skill-card__label">Java</span>
+      </li>
+      <li class="skill-card">
+        <span class="skill-badge skill-badge--python">Py</span>
+        <span class="skill-card__label">Python</span>
+      </li>
+      <li class="skill-card">
+        <span class="skill-badge skill-badge--html">HTML</span>
+        <span class="skill-card__label">HTML</span>
+      </li>
+      <li class="skill-card">
+        <span class="skill-badge skill-badge--css">CSS</span>
+        <span class="skill-card__label">CSS</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section" id="projects">
+    <div class="section__head">
+      <p class="eyebrow">Projects</p>
+      <h2 class="section__title">Things I've built</h2>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <article class="project-card">
+        <!-- SCREENSHOT PLACEHOLDER — replace with: <img src="assets/project-banking.jpg" alt="Banking website clone screenshot"> -->
+        <img src="images/bank.png" alt="Brand website clone screenshot" class="project-card__image">
+
+        <div class="project-card__body">
+          <h3 class="project-card__title">Banking Website Clone</h3>
+          <p class="project-card__desc">
+            Recreated a banking platform's landing page to practice responsive
+            layout, navigation structure and clean CSS from a real-world design.
+          </p>
+          <ul class="tag-list">
+            <li>HTML</li><li>CSS</li>
+          </ul>
+          <div class="project-card__links">
+            <a href="https://banking-website-clone.netlify.app/" target="_blank" rel="noopener" class="btn btn--small btn--primary">Live Demo</a>
+            <!-- Update this href with your actual GitHub repo URL -->
+            <a href="https://github.com/khalidabdusemed61-droid/Banking-websites" target="_blank" rel="noopener" class="btn btn--small btn--ghost">Source Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project-card">
+        <img src="images/apple.png" alt="Brand website clone screenshot" class="project-card__image">
+
+        <div class="project-card__body">
+          <h3 class="project-card__title">Brand Website Clone</h3>
+          <p class="project-card__desc">
+            Rebuilt a brand marketing site to practice component layout, visual
+            hierarchy and consistent styling across sections.
+          </p>
+          <ul class="tag-list">
+            <li>HTML</li><li>CSS</li>
+          </ul>
+          <div class="project-card__links">
+            <a href="https://brand-website-clone.netlify.app/" target="_blank" rel="noopener" class="btn btn--small btn--primary">Live Demo</a>
+            
+            <a href="https://github.com/khalidabdusemed61-droid/Apple-Website-New-2026-responsive" target="_blank" rel="noopener" class="btn btn--small btn--ghost">Source Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Placeholder card for a future project — duplicate a project-card above and edit, then delete this -->
+      <article class="project-card">
+        <img src="images/puppy.png" alt="Brand website clone screenshot" class="project-card__image">
+
+        <div class="project-card__body">
+          <h3 class="project-card__title">Basic css practice page</h3>
+          <p class="project-card__desc">
+             A single page titled puppy lovers page to practice the very basics of css.
+          </p>
+          <ul class="tag-list">
+            <li>HTML</li><li>CSS</li>
+          </ul>
+          <div class="project-card__links">
+            <a href="https://css-basics-puppylovers.netlify.app/" target="_blank" rel="noopener" class="btn btn--small btn--primary">Live Demo</a>
+            
+            <a href="https://github.com/khalidabdusemed61-droid/Puppy_Lovers_page" target="_blank" rel="noopener" class="btn btn--small btn--ghost">Source Code</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section section--muted" id="contact">
+    <div class="section__head">
+      <p class="eyebrow">Contact</p>
+      <h2 class="section__title">Let's connect</h2>
+    </div>
+
+    <div class="contact-box">
+      <div class="email-row">
+        <span id="emailText">khalidabdusemed65@gmail.com</span>
+        <button id="copyEmailBtn" class="btn btn--small btn--ghost" type="button">Copy</button>
+      </div>
+
+      <ul class="social-row">
+        <li>
+          <a href="https://github.com/khalidabdusemed61-droid" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/khalid-abdusemed-8881aa412?utm_source=share_via&utm_content=profile&utm_medium=member_android526+" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="mailto:khalidabdusemed65@gmail.com" class="social-icon" aria-label="Email">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/envelope.svg" alt="" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> Khalid Abdulsemed. Built with HTML, CSS &amp; a little JS.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
